@@ -1,0 +1,21 @@
+<html ng-app="">
+    
+    <head>
+        <title> Anguler example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <style type="text/css">
+            p{
+                font-size: {{count}};
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+       <button count="1"> count 1</button><br/>
+       <button count="1"> count 2</button>
+
+       Count:{{count}}
+       <img src="E:\\phone backup 02_10_2020/{{count}}.jpg"  ng-mouseover="count = count + 1" ng-init="count=1" height="300px" width="300px">
+    </body>
+</html>
